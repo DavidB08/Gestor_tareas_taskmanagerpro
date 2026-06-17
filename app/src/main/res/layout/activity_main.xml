@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F172A">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📋 TaskManager Pro"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gestor de Tareas"
+            android:textColor="#94A3B8"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/txtId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ID de la tarea"
+            android:background="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/txtTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Título de la tarea"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"/>
+
+        <Spinner
+            android:id="@+id/spEstado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="➕ Agregar Tarea"
+            android:layout_marginTop="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnBuscar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Buscar"/>
+
+            <Button
+                android:id="@+id/btnEditar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Editar"/>
+
+            <Button
+                android:id="@+id/btnEliminar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Eliminar"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnMostrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mostrar Tareas"/>
+
+        <ListView
+            android:id="@+id/listaTareas"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#FFFFFF"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
